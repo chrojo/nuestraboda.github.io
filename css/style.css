@@ -1,0 +1,38 @@
+.nav-link {
+    color: #DB9E3C!important;
+    margin: 0 15px 0 15px;
+}
+
+#mainTitle {
+    font-family: 'Euphoria Script', cursive;
+    font-size: 220px;
+    color: #DB9E3C;
+    line-height: 200px;;
+    text-shadow: 0 3px 6px rgba(0,0,0, 0.5);
+}
+
+.main {
+    background-color: #FFF8F3;
+    padding: 100px 0 150px 0 ;
+}
+
+#khlogo{
+    width: 22%;
+    fill: #C53222;
+}
+
+.phrase {
+    font-family: 'Euphoria Script', cursive;
+    font-size: 28px;
+    color: #C53222;
+    font-weight: 600;
+}
+
+.description {
+    font-family: 'Roboto Slab', serif;
+    font-size: 22px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Roboto+Slab&display=swap');
