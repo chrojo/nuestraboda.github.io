@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Roboto+Slab&display=swap');
 
 body {
     font-family: 'Roboto Slab', serif;
@@ -17,16 +19,16 @@ body {
 
 #mainTitle {
     font-family: 'Euphoria Script', cursive;
-    font-size: 220px;
+    line-height: 200px;
+    font-size: 200px;
     color: #DB9E3C;
-    line-height: 200px;;
     text-shadow: 0 3px 6px rgba(0,0,0, 0.5);
 }
 
 .main {
     background-color: #FFF8F3;
     padding: 150px 0;
-    height: 100vh;;
+    height: 100vh;
 }
 
 #khlogo{
@@ -42,8 +44,7 @@ body {
 }
 
 .description {
-    font-family: 'Roboto Slab', serif;
-    font-size: 22px;
+    font-size: 1.3rem;
 }
 
 .main .btn {
@@ -52,11 +53,14 @@ body {
     background-color: #C53222;
     border: none;
     border-radius: 50px;
-    box-shadow: 0 5px 6px rgba(0,0,0, 0.5);;
+    box-shadow: 0 5px 6px rgba(0,0,0, 0.5);
+    transition: all 0.2s ease-in;
 }
 
 .main .btn:hover {
-    background-color: #C53222;
+    background-color: #C53222!important;
+    transform: translateY(2px);
+    box-shadow: none;
 }
 
 .image-middle01 {
@@ -71,5 +75,97 @@ body {
     transform: translateY(-50%);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Roboto+Slab&display=swap');
+.titles {
+    display: block;
+    position: relative;
+    text-align: center;
+    font-family: 'Euphoria Script', cursive;
+    font-size: 70px;
+    color: #DB9E3C;
+    margin: 0 0 50px 0;
+}
+
+.countdown {
+    background-color: #FFE2C9;
+    height: 70vh;
+}
+
+.dataCount {
+    display:  inline-block;
+    width: 150px;
+}
+
+.titleCounter {
+    background-color: #FCE8DA; 
+    color: #DB9E3C;
+    text-transform: uppercase;
+    font-size: 18px; margin: 0 16px 0 16px;
+    padding: 5px 0 5px 0;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 5px 6px rgba(0,0,0, 0.2);
+}
+
+.rectBox {
+    background-color: #FFF8F3; 
+    color: #DB9E3C; 
+    font-size: 50px; 
+    padding: 25px; 
+    margin: 3px 16px 0 16px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 5px 6px rgba(0,0,0, 0.3);
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) {
+    #mainTitle {
+        font-size: 150px;
+        line-height: 150px;
+    }
+}
+
+ /* X-Large devices (large desktops, 1200px and up) */
+ @media (max-width: 1200px) {
+    #mainTitle {
+        font-size: 120px!important;
+        line-height: 120px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+    #mainTitle {
+        font-size: 90px!important;
+        line-height: 90px;
+    }
+    #khlogo {
+        width: 25%;
+    }
+    .description {
+        font-size: 1.2rem;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    #mainTitle {
+        font-size: 80px!important;
+        line-height: 80px;
+    }
+    #khlogo {
+        width: 30%;
+    }
+    .description {
+        font-size: 1rem;
+    }
+ }
+
+/* Small devices (landscape phones, 576px and down) */
+@media (max-width: 576px) {
+    #mainTitle {
+        font-size: 70px!important;
+    }
+    #khlogo {
+        width: 140px;
+    }
+}
+
