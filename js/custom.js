@@ -28,3 +28,26 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+// Select the div element
+const colorChangeDiv = document.querySelector('.color-change-div');
+const colorTextChangeDiv = document.querySelectorAll('.nav-link');
+
+// Function to change background color
+function changeBackgroundColorOnScroll() {
+    // Check if the page has been scrolled
+    if (window.scrollY > 0) {
+        colorChangeDiv.style.backgroundColor = '#C53222'; // Change to the desired color
+        colorTextChangeDiv.forEach(div => {
+          div.style.color = '#FFF8F3'; // Change to the desired color
+        });
+    } else {
+        colorChangeDiv.style.backgroundColor = '#FFF8F3'; // Reset to the initial color+
+        colorTextChangeDiv.forEach(div => {
+          div.style.color = '#DB9E3C'; // Reset to the initial color
+        });
+    }
+}
+
+// Add an event listener to the window's scroll event
+window.addEventListener('scroll', changeBackgroundColorOnScroll);
