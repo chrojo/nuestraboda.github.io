@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Roboto+Slab:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Roboto+Slab:wght@300;400;600&display=swap');
+@font-face {
+    font-family: 'Font Awesome 5 Pro Light';
+    src:  url('fonts/Font Awesome 5 Pro-Light-300.otf') format('otf');
+}
+
 
 body {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', serif!important;
+    font-weight: 300;
 }
 
 .navbar .container-fluid {
@@ -19,7 +24,7 @@ body {
 }
 
 .color-change-div {
-    background-color: #FFF8F3; /* Initial background color */
+    background-color: #fff9f3; /* Initial background color */
     transition: background-color 0.5s ease; /* Smooth transition */
 }
 
@@ -32,7 +37,7 @@ body {
 }
 
 .main {
-    background-color: #FFF8F3;
+    background-color: #fff9f3;
     padding: 150px 0;
     height: 100vh;
 }
@@ -89,11 +94,13 @@ body {
     font-size: 70px;
     color: #DB9E3C;
     margin: 0 0 50px 0;
+    text-shadow: 0 3px 6px rgba(0,0,0, 0.25);
 }
 
 .countdown {
-    background-color: #FFE2C9;
-    height: 70vh;
+    background-color: #FFEADD;
+    padding-top: 150px;
+    padding-bottom: 400px;
 }
 
 .dataCount {
@@ -113,7 +120,7 @@ body {
 }
 
 .rectBox {
-    background-color: #FFF8F3; 
+    background-color: #fff9f3; 
     color: #DB9E3C; 
     font-size: 50px; 
     padding: 25px; 
@@ -122,18 +129,33 @@ body {
     box-shadow: 0 5px 6px rgba(0,0,0, 0.3);
 }
 
+.container-mainpicture {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 950px;
+    transform: translateY(-50%);
+    background-color: #fff9f3;
+    padding: 15px;
+    box-shadow: 0 5px 6px rgba(0,0,0, 0.3);
+    z-index: 2;
+}
+
 .mainpicture {
     background-image: url("https://raw.githubusercontent.com/chrojo/nuestraboda.github.io/main/images/012_blur.jpg");
-    font-size: 25px;
-    height: 80vh;
+    font-size: 18px;
     text-align: center;
+    height: 460px;
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
 }
 
 .mainpicture .container {
-    padding: 50px 200px;
+    padding: 100px 50px;
+    height: 100%;
     background-color: rgba(0,0,0, 0.3);
     border-radius: 10px;
 }
@@ -144,20 +166,278 @@ body {
 }
 
 .mainpicture .line {
-    margin: 40px 0;
+    margin: 30px 0;
     border: 5px;
     width: 100%;
     height: 1px;
     background-color: #FFF8F3;
 }
 
-.lovestory .titles {
-    margin-top: 150px;
+.background-pattern001 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("/images/GodHearts.png");
+    width: 100%;
+    height: 100%;
+    opacity: 10%;
 }
 
-.img001 img {
+.lovestory {
+    background-color: #fff9f3;
+    position: relative;
+    padding-bottom: 150px;
+}
+
+.lovestory .titles {
+    margin-top: 310px;
+    margin-bottom: 70px;
+}
+
+.lovestory .text01 {
+    margin: 0 0 0 100px;
+    /*text-align: justify;*/
+}
+
+.lovestory .text02 {
+    margin: 0 100px 0 0;
+    /*text-align: justify;*/
+}
+
+.lovestory .row {
+    margin-bottom: 50px;
+}
+
+.lovestory .img001 {
+    background-color: #FFF8F3;
+    box-shadow: 0 5px 6px rgba(0,0,0, 0.3);
+    padding: 15px;
+    transform: rotate(-2deg);
+}
+
+.lovestory .img002 {
+    background-color: #FFF8F3;
+    box-shadow: 0 5px 6px rgba(0,0,0, 0.3);
+    padding: 15px;
+    transform: rotate(2deg);
+}
+
+.lovestory .img-003 {
+    margin: 80px 200px 30px 200px;
+}
+
+.lovestory .img-003 .col {
+    margin: 0 20px;
+}
+
+.lovestory .img-003 .col img, .lovestory .img-004 .col img {
     width: 100%;
 }
+
+.lovestory .img-003 .col {
+    background-color: #FFF8F3;
+    padding: 20px;
+    box-shadow: 0 5px 6px rgba(0,0,0, 0.3);
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 2;
+}
+
+.lovestory .img001 img, .lovestory .img002 img {
+    width: 100%;
+}
+
+.lovestory .img-004 {
+    background-color: #FFF8F3;
+    padding: 20px;
+    box-shadow: 0 5px 6px rgba(0,0,0, 0.3);
+    margin: 0 200px;
+    position: relative;
+    z-index: 2;
+}
+
+.lovestory .img-004 .col {
+    padding: 0;
+}
+
+.celebration {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: #FFEADD;
+    position: relative;
+}
+
+#ring-svg {
+    display: block;
+    margin: auto;
+    width: 10%;
+    fill: #DB9E3C;
+    margin-bottom: 50px;
+}
+
+.celebration .container-text {
+    padding: 0 300px;
+}
+
+.celebration .cross {
+    position: absolute;
+    font-family: 'Font Awesome 5 Pro Light';
+    font-style: normal;
+    color: #DB9E3C;
+    font-size: 24px;
+    margin-left: 10px;
+    line-height: 24px;
+}
+
+.celebration .phrase001 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.celebration .phrase002 {
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 0 100px;
+}
+
+.celebration .phrase002 .col p {
+    margin-top: 10px;
+}
+
+.celebration .phrase003 {
+    margin: 0 20px;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.celebration .line {
+    margin: 30px 0;
+    border: 5px;
+    width: 100%;
+    height: 1px;
+    background-color: #DB9E3C;
+}
+
+.celebration .vertical-line {
+    width: 1px!important;
+    padding: 0;
+    background-color: #DB9E3C;
+}
+
+.dandwh {
+    padding: 120px 0;
+    background-color: #fff9f3;
+}
+
+.dandwh .wedding-date {
+    font-size: 150px;
+    color: #DB9E3C;
+}
+
+.dandwh .chruch, .dandwh .glasses {
+    font-family: 'Font Awesome 5 Pro Light';
+    font-style: light;
+    font-size: 120px;
+    color: #DB9E3C;
+}
+
+.dandwh .titles {
+    font-size: 140px;
+    margin: 0;
+}
+
+.dandwh .row {
+    text-align: center;
+}
+
+.dandwh .dandwh-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dandwh .dandwh-location {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.dandwh .line {
+    margin: 30px 50px;
+    width: 1px;
+    padding: 0;
+    background-color: #DB9E3C;
+}
+
+.dresscode {
+    background-color: #FFEADD;
+}
+
+.dresscode .code-title {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: center;
+}
+
+.dresscode .code-title .phrase002 {
+    padding: 0 100px;
+}
+
+.dresscode .color-code {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: center;
+}
+
+.dresscode .text-formal {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.dresscode .red {
+    background-color: #FF0000;
+}
+
+.dresscode .white {
+    background-color: #fff;
+}
+
+.dresscode .cream {
+    background-color: #EDD9BE;
+}
+
+.dresscode .color-code img {
+    display: block;
+    max-height:400px;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dresscode .people-dressing-icon {
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.dresscode .container-phrase003 {
+}
+
+.dresscode .phrase003 {
+    padding: 0 60px;
+}
+
+.dresscode .line {
+    margin: 30px 0;
+    height: 1px;
+    background-color: #DB9E3C;
+}
+
+.dresscode .donot {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (max-width: 1400px) {

@@ -42,7 +42,7 @@ function changeBackgroundColorOnScroll() {
           div.style.color = '#FFF8F3'; // Change to the desired color
         });
     } else {
-        colorChangeDiv.style.backgroundColor = '#FFF8F3'; // Reset to the initial color+
+        colorChangeDiv.style.backgroundColor = '#fff9f3'; // Reset to the initial color+
         colorTextChangeDiv.forEach(div => {
           div.style.color = '#DB9E3C'; // Reset to the initial color
         });
