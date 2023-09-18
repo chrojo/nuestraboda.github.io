@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Roboto+Slab:wght@300;400;600&display=swap');
 @font-face {
     font-family: 'Font Awesome 5 Pro Light';
-    src:  url('fonts/Font Awesome 5 Pro-Light-300.otf') format('otf');
+    src:  url('https://chrojo.github.io/nuestraboda.github.io/fonts/Font%20Awesome%205%20Pro-Light-300.otf') format('otf');
 }
 
 
@@ -225,12 +225,10 @@ body {
 
 .lovestory .text01 {
     margin: 0 0 0 100px;
-    /*text-align: justify;*/
 }
 
 .lovestory .text02 {
     margin: 0 100px 0 0;
-    /*text-align: justify;*/
 }
 
 .lovestory .row {
@@ -241,14 +239,14 @@ body {
     background-color: #FFF8F3;
     box-shadow: 0 5px 6px rgba(0,0,0, 0.3);
     padding: 15px;
-    transform: rotate(-2deg);
+    transform: rotate(-1deg);
 }
 
 .lovestory .img002 {
     background-color: #FFF8F3;
     box-shadow: 0 5px 6px rgba(0,0,0, 0.3);
     padding: 15px;
-    transform: rotate(2deg);
+    transform: rotate(1deg);
 }
 
 .lovestory .img-003 {
@@ -408,6 +406,10 @@ body {
     position: relative;
 }
 
+.dandwh .first-location-2 {
+    display: none;
+}
+
 .dandwh .first-iframe {
     position: absolute;
     top: 0;
@@ -434,6 +436,10 @@ body {
     opacity: 0;
     transition: 0.3s ease-in;
     transition-delay: 2s;
+}
+
+#first-iframe:hover > #second-iframe {
+    display: none;
 }
 
 .dandwh .first-location .hover-div:hover, .dandwh .second-location .hover-div:hover {
@@ -707,7 +713,6 @@ body {
 }
 
 audio {
-    display: none;
 }
 
 /* Style for the media player */
@@ -729,6 +734,14 @@ audio {
     }
     .image-middle01 img {
         width: 60%;
+    }
+
+    .lovestory .text01 {   
+        margin: 0 0 0 50px;
+    }
+
+    .lovestory .text02 {
+        margin: 0 50px 0 0;
     }
 }
 
@@ -755,6 +768,43 @@ audio {
     .titles {
         font-size: 60px;
     }
+
+    .lovestory {
+        padding-bottom: 100px;
+    }
+
+    .lovestory .text01 {   
+        font-size: 14px;
+        margin: 0 0 0 50px;
+        text-align: justify;
+    }
+
+    .lovestory .text02 {
+        font-size: 14px;
+        text-align: justify;
+        margin: 0 50px 0 0;
+    }
+    
+    .lovestory .img-003 {
+        margin: 50px 100px 50px 100px;
+    }
+
+    .lovestory .img-004 {
+        margin: 0 100px;
+    }
+
+    .celebration {
+        padding: 100px 0;
+    }
+
+    .celebration .container-text {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .dandwh .titles {
+        font-size: 110px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -769,6 +819,84 @@ audio {
     .description {
         font-size: 1.2rem;
     }
+    .countdown {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .mainpicture .container {
+        margin: 0;
+        max-width: 100%;
+        padding: 100px 120px;
+    }
+
+    .container-mainpicture {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        transform: translateY(0);
+        width: 100%;
+    }
+
+    .lovestory .titles {
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+
+    .lovestory .text01 {
+        font-size: 14px;
+        margin: 0;
+        margin-top: 70px;
+        text-align: justify;
+    }
+
+    .lovestory .text02 {
+        font-size: 14px;
+        text-align: justify;
+        margin: 0;
+        margin-top: 50px;
+    }
+
+    .lovestory .img-003 {
+        margin: 0px 20px 30px 20px;
+    }
+
+    .lovestory .img-004 {
+        margin: 0 20px;
+    }
+
+    .celebration .container-text {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #ring-svg {
+        width: 95px;
+    }
+    .dandwh {
+        padding: 100px 0;
+    }
+
+    .dandwh .titles {
+        font-size: 110px;
+    }
+
+    .dandwh .wedding-date {
+        font-size: 100px;
+    }
+
+    .dandwh .first-iframe, .dandwh .second-iframe {
+        display: none;
+    }
+
+    .dandwh .first-location {
+        display: none;
+    }
+
+    .dandwh .first-location-2 {
+        display: block;
+    }
+
  }
 
 /* Medium devices (tablets, 768px and up) */
