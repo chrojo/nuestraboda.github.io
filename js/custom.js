@@ -55,3 +55,8 @@ function changeBackgroundColorOnScroll() {
 // Add an event listener to the window's scroll event
 window.addEventListener('scroll', changeBackgroundColorOnScroll);
 
+// Get a reference to the audio element
+const audio = document.getElementById('audio');
+
+// Play the audio automatically when the page is loaded
+audio.play();

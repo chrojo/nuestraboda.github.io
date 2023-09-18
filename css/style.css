@@ -694,6 +694,32 @@ body {
     margin-bottom: 50px;
 }
 
+.footer {
+    background-color: #C53222;
+    text-align: center;
+    color: #fff9f3;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer p {
+    margin-bottom: 0;
+}
+
+audio {
+    display: none;
+}
+
+/* Style for the media player */
+#media-player {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (max-width: 1400px) {
