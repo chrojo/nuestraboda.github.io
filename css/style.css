@@ -14,6 +14,10 @@ body {
     margin: 15px 0;
 }
 
+.navbar-nav .nav-link {
+    color: #DB9E3C;
+}
+
 .nav-link {
     color: #DB9E3C;
     font-size: 14px;
@@ -61,6 +65,7 @@ body {
 .main .btn {
     padding: 12px 80px 12px 80px;
     margin: 50px 0;
+    color: #FFEADD;
     background-color: #C53222;
     border: none;
     border-radius: 50px;
@@ -72,6 +77,30 @@ body {
     background-color: #C53222!important;
     transform: translateY(2px);
     box-shadow: none;
+}
+
+#rsvp-btn-top {
+    text-decoration: none;
+}
+
+#btn-confirm {
+    display: none;
+    margin: 0 0 0 50px;
+    padding: 12px 60px 12px 60px;
+    color: #000;
+    background-color: #FFEADD;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 2px 6px rgba(0,0,0, 0.3);
+    transition: all 0.2s ease-in;
+}
+
+.show-btn {
+    display: block;
+    transition: all 0.2s ease-in;
 }
 
 .image-middle01 {
@@ -255,6 +284,7 @@ body {
     margin: 0 200px;
     position: relative;
     z-index: 2;
+
 }
 
 .lovestory .img-004 .col {
@@ -337,7 +367,6 @@ body {
 
 .dandwh .chruch, .dandwh .glasses {
     font-family: 'Font Awesome 5 Pro Light';
-    font-style: light;
     font-size: 120px;
     color: #DB9E3C;
 }
@@ -366,6 +395,69 @@ body {
     width: 1px;
     padding: 0;
     background-color: #DB9E3C;
+}
+
+.dandwh .location {
+    font-family: 'Font Awesome 5 Pro Light';
+    font-style: light;
+    font-size: 50px;
+    transition: 0.3s;
+}
+
+.dandwh .first-location, .dandwh .second-location {
+    position: relative;
+}
+
+.dandwh .first-iframe {
+    position: absolute;
+    top: 0;
+    transform: translateX(-105%) translateY(-20%);
+    padding: 20px;
+    background-color: #FFF8F3;
+    box-shadow: 0 5px 6px rgba(0,0,0, 0.3);
+    border-radius: 1px;
+    border-color: #000;
+}
+
+.dandwh .second-iframe {
+    position: absolute;
+    top: 0;
+    transform: translateX(-165%) translateY(-20%);
+    padding: 20px;
+    background-color: #FFF8F3;
+    box-shadow: 0 5px 6px rgba(0,0,0, 0.3);
+    border-radius: 1px;
+    border-color: #000;
+}
+
+.dandwh .hidden-div {
+    opacity: 0;
+    transition: 0.3s ease-in;
+    transition-delay: 2s;
+}
+
+.dandwh .first-location .hover-div:hover, .dandwh .second-location .hover-div:hover {
+    cursor: pointer;
+}
+
+.dandwh .first-location .hover-div:hover + .hidden-div {
+    opacity: 1;
+    transition: 0.3s ease-out;
+}
+
+.dandwh .second-location .hover-div:hover + .hidden-div {
+    opacity: 1;
+    transition: 0.3s ease-out;
+}
+
+.dandwh .first-location .hover-div:hover > .location {
+    color: #DB9E3C;
+    transition: 0.3s;
+}
+
+.dandwh .second-location .hover-div:hover > .location {
+    color: #DB9E3C;
+    transition: 0.3s;
 }
 
 .dresscode {
@@ -419,9 +511,6 @@ body {
     margin-bottom: 15px;
 }
 
-.dresscode .container-phrase003 {
-}
-
 .dresscode .phrase003 {
     padding: 0 60px;
 }
@@ -436,6 +525,173 @@ body {
     margin-top: 20px;
     font-size: 18px;
     font-weight: 600;
+}
+
+.gift {
+    padding: 140px 0;
+    background-color: #fff9f3;
+}
+
+.container-gift-icon {
+    background-color: #FFEADD;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 6px rgba(0,0,0, 0.3);
+}
+
+.gift-icon {
+    font-family: 'Font Awesome 5 Pro Light';
+    font-size: 180px;
+    text-align: center;
+    color: #DB9E3C;
+    padding-top: 10px;
+}
+
+.gift .content-gift {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 250px;
+}
+
+.instagram {
+    padding: 140px 0;
+    background-color: #FFEADD;
+}
+
+.instagram svg {
+    fill: #C53222;
+    width: 150px;
+    transition: 0.3s ease-out;
+}
+
+.instagram .hashtag {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    color: #C53222;
+    margin-bottom: 30px;
+}
+
+.instagram .instagram-icon {
+    font-family: 'Font Awesome 5 Pro Light';
+    font-weight: 400;
+    font-size: 60px;
+    text-align: center;
+    background-color: #fff9f3;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 6px rgba(0,0,0, 0.3);
+    cursor: pointer;
+}
+
+.instagram .instagram-icon:hover svg {
+    fill: #DB9E3C;
+    transition: 0.3s ease-out;
+}
+
+.instagram .content-instagram {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 250px;
+}
+
+.rsvp {
+    padding: 150px 0;
+    background-color: #fff9f3;
+}
+
+.rsvp label {
+    display: block;
+}
+
+.rsvp .container-rsvp {
+    padding: 30px 30px;
+    background-color: #FFEADD;
+    box-shadow: 0 5px 6px rgba(0,0,0, 0.3);
+}
+
+.rsvp .border001 {
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px;
+    border-color: #DB9E3C;
+}
+
+.rsvp .border002 {
+    border-width: 1px;
+    border-style: solid;
+    padding: 100px;
+    border-color: #DB9E3C;
+}
+
+.rsvp input[type=text], .rsvp input[type=email] {
+    background-color: transparent;
+    border-width: 1px;
+    border-style: none;
+    border-bottom-style: solid;
+    width: 500px;
+    border-color: #DB9E3C;
+}
+
+.rsvp textarea {
+    background-color: transparent;
+    margin-top: 15px;
+    width: 500px;
+    border-color: #DB9E3C;
+}
+
+.rsvp button[type=submit] {
+    background-color: #C53222;
+    color: #FFEADD;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 5px 6px rgba(0,0,0, 0.5);
+    transition: all 0.2s ease-in;
+    border: none;
+    width: 150px;
+    padding: 5px 0;
+    display: block;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.rsvp .titles {
+    margin-bottom: 30px;
+}
+
+.reminder {
+    margin-top: 40px;
+    font-weight: 600;
+    width: 450px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-rsvp .phrase001 {
+    color: #DB9E3C;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+}
+
+.container-rsvp form {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 

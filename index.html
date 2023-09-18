@@ -16,26 +16,24 @@
 
             <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
                 <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#" aria-current="page" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Nuestra Historia</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">¿Dónde y Cúando?</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Codigo de Vestimenta</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#main" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lovestory">Nuestra Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dandwh">¿Dónde y Cúando?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dresscode">Codigo de Vestimenta</a>
+                    </li>
+                    <a id="rsvp-btn-top" href="#rsvp"><button id="btn-confirm" type="button" class="btn btn-primary btn-lg show-btn">Confirma tu asistencia</button></a>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container-fluid main d-flex align-content-center flex-wrap">
+    <div id="main" class="container-fluid main d-flex align-content-center flex-wrap">
         <div class="container text-center">
             <svg id="khlogo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1105.52 597.15">
                 <g>
@@ -52,7 +50,7 @@
             <div id="mainTitle">Andres & Jessica</div>
             <div class="phrase text-end">Dos Corazones, Un Amor</div>
             <div class="description">¡Únete a nosotros mientras decimos "Sí, acepto"!</div>
-            <button type="button" class="btn btn-primary btn-lg">!Únete¡</button>
+            <a  href="#rsvp"><button type="button" class="btn btn-primary btn-lg">Confirma tu asistencia</button></a>
         </div>
     </div>
     <div class="image-middle01"><img src="images/flowers_004a.png"></div>
@@ -89,7 +87,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid lovestory d-flex justify-content-center align-content-center flex-wrap">
+    <div id="lovestory" class="container-fluid lovestory d-flex justify-content-center align-content-center flex-wrap">
         <div class="background-pattern001"></div>
         <div class="container titles">Nuestra Historia</div>
         <div class="container">
@@ -228,7 +226,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid dandwh">
+    <div id="dandwh" class="container-fluid dandwh">
         <div class="container">
             <div class="row">
                 <div class="col titles d-flex justify-content-center align-content-center flex-wrap"><p>¿Donde?</p><p>¿Cúando?</p></div>
@@ -239,23 +237,38 @@
                             <p class="chruch"></p>
                             <p class="dandwh-subtitle">Ceremonia</p>
                             <p>4:00 PM</p>
-                            <p class="dandwh-location">Iglesia Católica Santa Gema</p>
-                            <p>Simón Rodríguez, S/n, Ciudadela Bolivariana, Centro, Guayaquil 090510, Ecuador</p>
+                            <div class="first-location">
+                                <div class="hover-div">
+                                    <p class="dandwh-location">Iglesia Católica Santa Gema</p>
+                                    <p>Simón Rodríguez, S/n, Ciudadela Bolivariana, Centro, Guayaquil 090510, Ecuador</p>
+                                    <p class="location"></p>
+                                </div>
+                                <div class="first-iframe hidden-div">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1993.4621747738504!2d-79.89517546174822!3d-2.1824002191830947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6ddc5213824f%3A0xde11e7d514a9adc4!2sIglesia%20Cat%C3%B3lica%20Santa%20Gema!5e0!3m2!1sen!2ses!4v1694980405222!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
                         </div>
                         <div class="line"></div>
                         <div class="col">
                             <p class="glasses"></p>
                             <p class="dandwh-subtitle">Recepción</p>
                             <p>4:00 PM</p>
-                            <p class="dandwh-location">Salón de Eventos Manantial</p>
-                            <p>Av. Guillermo Pareja Rolando 99-69-27, Guayaquil 090513, Ecuador</p>
+                            <div class="second-location">
+                                <div class="hover-div">
+                                    <p class="dandwh-location">Salón de Eventos Manantial</p>
+                                    <p>Av. Guillermo Pareja Rolando 99-69-27, Guayaquil 090513, Ecuador</p>
+                                    <p class="location"></p>
+                                </div>
+                                <div class="second-iframe hidden-div">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d996.753992874833!2d-79.8936015!3d-2.1475713!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d0bb7665833%3A0x961c7854a4381a69!2sSal%C3%B3n%20de%20Eventos%20Manantial!5e0!3m2!1ses-419!2ses!4v1694987789164!5m2!1ses-419!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid dresscode">
+    <div id="dresscode" class="container-fluid dresscode">
         <div class="container">
             <div class="row">
                 <div class="col code-title">
@@ -280,6 +293,53 @@
                     <div class="row color-code">
                         <img src="images/dress-color.png">
                         <p class="donot">NO utilizar ninguno de estos colores</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid gift">
+        <div class="container">
+            <div class="titles">Un Detalle Especial</div>
+            <div class="container-gift-icon"><p class="gift-icon"></p></div>
+            <p class="content-gift">Tu presencia es el regalo más valioso que podríamos recibir. Sin embargo, 
+            si deseas tener un gesto amable con nosotros, puedes hacerlo con un obsequio 
+            en un sobre cerrado. Tu amabilidad será recibida con gratitud.</p>
+        </div>
+    </div>
+    <div class="container-fluid instagram">
+        <div class="container">
+            <div class="titles">#BodaAnst&Jess</div>
+            <a href="https://www.instagram.com/explore/tags/BodaAnst&Jess/" target="_blank">
+                <div class="instagram-icon d-flex justify-content-center flex-wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </div>
+            </a>
+            <p class="hashtag">#BodaAnst&Jess</p>
+            <p class="content-instagram">Como deseamos atesorar cada momento de nuestra boda, te extendemos una cordial 
+                invitación a compartir tus fotos de este día tan especial para nosotros. 
+                Tu ayuda en inmortalizar estos momentos sería invaluable.</p>
+        </div>
+    </div>
+    <div class="container-fluid rsvp">
+        <div class="container d-flex justify-content-center flex-wrap">
+            <div id="rsvp" class="container-rsvp">
+                <div class="border001">
+                    <div class="border002">
+                        <div class="titles">Confirma tu invitación</div>
+                        <p class="phrase001">¡Esperamos que puedas asistir!</p><p class="phrase001">¡Se ruega puntualidad!</p>
+                        <form target="_blank" action="https://formsubmit.co/lvasquezvega@hotmail.com" method="POST">
+                            <label for="name">Nombre completo:</label>
+                            <input type="text" name="name" required><br><br>
+                            
+                            <label for="message">¿Quieres enviarnos un mensaje?</label>
+                            <textarea  placeholder="Tu mensaje" name="message" rows="4"></textarea><br><br>
+                            
+                            <button type="submit">Confirmar</button>
+                        </form>
+                        <div class="reminder">
+                            <p>Nos gustaría mucho contar con tu presencia en nuestro evento. Si no confirmas tu asistencia, entenderemos que lamentablemente no podrás unirte a nosotros.</p> 
+                        </div>
                     </div>
                 </div>
             </div>
