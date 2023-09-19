@@ -1194,6 +1194,11 @@ body {
         display: none;
     }
 
+    .dandwh .container {
+        position: relative;
+        z-index: 3;
+    }
+
     .dresscode .titles {
         line-height: 60px;
     }
