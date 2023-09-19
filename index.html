@@ -34,6 +34,7 @@
         </div>
     </nav>
     <div id="main" class="container-fluid main d-flex align-content-center flex-wrap">
+        <div class="background-pattern001"></div>
         <div class="container text-center">
             <svg id="khlogo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1105.52 597.15">
                 <g>
@@ -48,6 +49,11 @@
                 </g>
             </svg>
             <div id="mainTitle">Andres & Jessica</div>
+            <div class="row sm-main-title">
+                <div class="col col-md-5">Andres</div>
+                <div class="col col-md-2">&</div>
+                <div class="col col-md-5">Jessica</div>
+            </div>
             <div class="phrase text-end">Dos Corazones, Un Amor</div>
             <div class="description">¡Únete a nosotros mientras decimos "Sí, acepto"!</div>
             <a  href="#rsvp"><button type="button" class="btn btn-primary btn-lg">Confirma tu asistencia</button></a>
@@ -55,23 +61,29 @@
     </div>
     <div class="image-middle01"><img src="images/flowers_004a.png"></div>
     <div class="container-fluid countdown d-flex justify-content-center align-content-center flex-wrap">
-        <div class="container titles">Cuenta Regresiva</div>
-        <div id="countTimer">
-            <div class="dataCount text-center">
-                <div class="titleCounter">Días</div>
-                <div id="dayCount" class="rectBox"></div>
+        <div class="container">
+            <div class="row titles">
+                <div class="col">
+                    Cuenta Regresiva
+                </div> 
             </div>
-            <div class="dataCount text-center">
-                <div class="titleCounter">Horas</div>
-                <div id="hoursCount" class="rectBox"></div>
-            </div>
-            <div class="dataCount text-center">
-                <div class="titleCounter">Minutos</div>
-                <div id="minuteCount" class="rectBox"></div>
-            </div>
-            <div class="dataCount text-center">
-                <div class="titleCounter">Segundos</div>
-                <div id="secondCount" class="rectBox"></div>
+            <div id="countTimer" class="row">
+                <div class="dataCount text-center col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="titleCounter">Días</div>
+                    <div id="dayCount" class="rectBox"></div>
+                </div>
+                <div class="dataCount text-center col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="titleCounter">Horas</div>
+                    <div id="hoursCount" class="rectBox"></div>
+                </div>
+                <div class="dataCount text-center col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="titleCounter">Minutos</div>
+                    <div id="minuteCount" class="rectBox"></div>
+                </div>
+                <div class="dataCount text-center col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="titleCounter">Segundos</div>
+                    <div id="secondCount" class="rectBox"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -82,7 +94,7 @@
                 <p>La esperanza es lo que nos hace fuertes. 
                     Es la razón del por qué estamos aquí. 
                     Es por lo que peleamos cuando todo lo demás está perdido.</p>
-                <p class="author" style="text-align: right;">Pandora</p>
+                <p class="author">Pandora</p>
                 <div class="line"></div>
             </div>
         </div>
@@ -91,8 +103,8 @@
         <div class="background-pattern001"></div>
         <div class="container titles">Nuestra Historia</div>
         <div class="container">
-            <div class="row align-items-center">
-                    <div class="col img001 col-lg-6 col-md-12">
+            <div class="row img-grp001 align-items-center">
+                    <div class="col img001 col-lg-6 col-md-12 col-sm-12 col-12">
                         <img src="extra/extra/013.jpg">
                     </div>
                     <div class="col text01">
@@ -107,8 +119,8 @@
                         de una emocionante y entrañable historia en sus corazones.</p>
                     </div>
             </div>
-            <div class="row align-items-center">
-                <div class="col text02 order-lg-first order-md-last">
+            <div class="row img-grp001 align-items-center">
+                <div class="col text02 order-lg-first order-md-last order-sm-last order-last">
                     <p>Con el paso del tiempo, su amor floreció y se 
                     fortaleció a pesar de los desafíos que enfrentaron juntos. 
                     Finalmente, cuando menos lo esperaban, un 4 de noviembre del 
@@ -119,16 +131,16 @@
                     la llama del amor que los unió en aquellos primeros días.
                     </p>
                 </div>
-                <div class="col img002 col-lg-6 col-md-12">
+                <div class="col img002 col-lg-6 col-md-12 col-sm-12 col-12">
                     <img src="extra/extra/009.jpg">
                 </div>
             </div>
             <div class="container">
                 <div class="row img-003">
-                    <div class="col">
+                    <div class="col col-sm-6 col-12">
                         <img src="extra/extra/002.jpg" alt="">
                     </div>
-                    <div class="col">
+                    <div class="col col-sm-6 col-12">
                         <img src="extra/extra/011.jpg" alt="">
                     </div>
                 </div>
@@ -227,22 +239,24 @@
         </div>
     </div>
     <div id="dandwh" class="container-fluid dandwh">
+        <div class="background-pattern001"></div>
         <div class="container">
             <div class="row">
-                <div class="col col-lg-6 col-md-12 titles d-flex justify-content-center align-content-center flex-wrap">
+                <div class="col col-lg-6 col-md-12 col-12 titles d-flex justify-content-center align-content-center flex-wrap">
                     <div class="row">
-                        <div class="col col-lg-12 col-md-6"><p>¿Donde?</p></div>
-                        <div class="col col-lg-12 col-md-6"><p>¿Cúando?</p></div>
+                        <div class="col col-lg-12 col-md-6 col-sm-6 col-12"><p>¿Donde?</p></div>
+                        <div class="col col-lg-12 col-md-6 col-sm-6 col-12"><p>¿Cúando?</p></div>
                     </div>
                 </div>
                 <div class="col">
                     <p class="wedding-date">11/11</p>
+                    <div class="col col-12 line-horizontal"></div>
                     <div class="row">
-                        <div class="col">
+                        <div class="col col-lg-5 col-12">
                             <p class="chruch"></p>
                             <p class="dandwh-subtitle">Ceremonia</p>
                             <p>8:00 PM</p>
-                            <div class="first-location">
+                            <div id="first-location" class="first-location">
                                 <div class="hover-div">
                                     <p class="dandwh-location">Iglesia Católica Santa Gema</p>
                                     <p>Simón Rodríguez, S/n, Ciudadela Bolivariana, Centro, Guayaquil 090510, Ecuador</p>
@@ -262,19 +276,30 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="line"></div>
-                        <div class="col">
+                        <div class="col col-lg-2 line"></div>
+                        <div class="col col-lg-5 col-12">
+                            <div class="col col-12 line-horizontal"></div>
                             <p class="glasses"></p>
                             <p class="dandwh-subtitle">Recepción</p>
                             <p>8:30 PM</p>
-                            <div class="second-location">
+                            <div id="second-location" class="second-location">
                                 <div class="hover-div">
                                     <p class="dandwh-location">Salón de Eventos Manantial</p>
                                     <p>Av. Guillermo Pareja Rolando 99-69-27, Guayaquil 090513, Ecuador</p>
                                     <p class="location"></p>
                                 </div>
                                 <div id="second-iframe" class="second-iframe hidden-div">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d996.753992874833!2d-79.8936015!3d-2.1475713!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d0bb7665833%3A0x961c7854a4381a69!2sSal%C3%B3n%20de%20Eventos%20Manantial!5e0!3m2!1ses-419!2ses!4v1694987789164!5m2!1ses-419!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                                </div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d996.753992874833!2d-79.8936015!3d-2.1475713!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d0bb7665833%3A0x961c7854a4381a69!2sSal%C3%B3n%20de%20Eventos%20Manantial!5e0!3m2!1ses-419!2ses!4v1694987789164!5m2!1ses-419!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            <div class="second-location-2">
+                                <a href="">
+                                    <div class="hover-div">
+                                        <p class="dandwh-location">Salón de Eventos Manantial</p>
+                                        <p>Av. Guillermo Pareja Rolando 99-69-27, Guayaquil 090513, Ecuador</p>
+                                        <p class="location"></p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -285,7 +310,7 @@
     <div id="dresscode" class="container-fluid dresscode">
         <div class="container">
             <div class="row">
-                <div class="col code-title">
+                <div class="col code-title col-lg-6 col-md-12 col-sm-12 col-12">
                     <div class="titles">Codigo de Vestimenta</div>
                     <p>Nos emociona enormemente compartir con ustedes los detalles de nuestro día especial. 
                         Como parte de la planificación, queremos asegurarnos de que todos nuestros queridos 
@@ -313,9 +338,10 @@
         </div>
     </div>
     <div class="container-fluid gift">
+        <div class="background-pattern001"></div>
         <div class="container">
             <div class="titles">Un Detalle Especial</div>
-            <div class="container-gift-icon"><p class="gift-icon"></p></div>
+            <div class="container-gift-icon"><p class="gift-icon  d-flex justify-content-center align-content-center flex-wrap"></p></div>
             <p class="content-gift">Tu presencia es el regalo más valioso que podríamos recibir. Sin embargo, 
             si deseas tener un gesto amable con nosotros, puedes hacerlo con un obsequio 
             en un sobre cerrado. Tu amabilidad será recibida con gratitud.</p>
@@ -336,6 +362,7 @@
         </div>
     </div>
     <div class="container-fluid rsvp">
+        <div class="background-pattern001"></div>
         <div class="container d-flex justify-content-center flex-wrap">
             <div id="rsvp" class="container-rsvp">
                 <div class="border001">
@@ -360,14 +387,12 @@
         </div>
     </div>
     <div class="container-fluid footer">
-        <p>© Andres y Jessica</p>
+        <p>© Andres y Jessica 2023</p>
     </div>
-    <!--! 
-    <audio autoplay controls="false">
-        <source src="audio/song001.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-    -->
+    
+    <audio id="my_audio" src="audio/song001.mp3" loop="loop"></audio>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="js/custom.js"></script>
   </body>

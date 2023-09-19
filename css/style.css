@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Roboto+Slab:wght@300;400;600&display=swap');
 @font-face {
     font-family: 'Font Awesome 5 Pro Light';
-    src:  url('https://chrojo.github.io/nuestraboda.github.io/fonts/Font%20Awesome%205%20Pro-Light-300.otf') format('otf');
+    src:  url('https://chrojo.github.io/nuestraboda.github.io/fonts/Font%20Awesome%205%20Pro-Light-300.otf') format('opentype');
 }
 
 
 body {
     font-family: 'Roboto Slab', serif!important;
     font-weight: 300;
+}
+
+.navbar  {
+    background-color: transparent;
 }
 
 .navbar .container-fluid {
@@ -44,6 +48,10 @@ body {
     background-color: #fff9f3;
     padding: 150px 0;
     height: 100vh;
+}
+
+.main .sm-main-title {
+    display: none;
 }
 
 #khlogo{
@@ -134,14 +142,18 @@ body {
 
 .dataCount {
     display:  inline-block;
-    width: 150px;
+    padding: 0!important;
+}
+
+#countTimer {
+    padding: 0 320px;
 }
 
 .titleCounter {
     background-color: #FCE8DA; 
     color: #DB9E3C;
     text-transform: uppercase;
-    font-size: 18px; 
+    font-size: 16px; 
     margin: 0 16px 0 16px;
     padding: 5px 0 5px 0;
     border-radius: 10px 10px 0 0;
@@ -151,8 +163,8 @@ body {
 .rectBox {
     background-color: #fff9f3; 
     color: #DB9E3C; 
-    font-size: 50px; 
-    padding: 25px; 
+    font-size: 50px;
+    padding: 30px; 
     margin: 3px 16px 20px 16px;
     border-radius: 0 0 10px 10px;
     box-shadow: 0 5px 6px rgba(0,0,0, 0.3);
@@ -194,6 +206,10 @@ body {
     color: #FFF8F3;
 }
 
+.mainpicture .author {
+    text-align: right;
+}
+
 .mainpicture .line {
     margin: 30px 0;
     border: 5px;
@@ -209,7 +225,7 @@ body {
     background-image: url("/images/GodHearts.png");
     width: 100%;
     height: 100%;
-    opacity: 10%;
+    opacity: 8%;
 }
 
 .lovestory {
@@ -253,8 +269,14 @@ body {
     margin: 80px 200px 30px 200px;
 }
 
-.lovestory .img-003 .col {
-    margin: 0 20px;
+.lovestory .img-003 .col img {
+    background-color: #FFF8F3;
+    padding: 20px;
+    box-shadow: 0 5px 6px rgba(0,0,0, 0.3);
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 2;
 }
 
 .lovestory .img-003 .col img, .lovestory .img-004 .col img {
@@ -262,12 +284,6 @@ body {
 }
 
 .lovestory .img-003 .col {
-    background-color: #FFF8F3;
-    padding: 20px;
-    box-shadow: 0 5px 6px rgba(0,0,0, 0.3);
-    display: block;
-    margin-top: auto;
-    margin-bottom: auto;
     z-index: 2;
 }
 
@@ -356,6 +372,7 @@ body {
 .dandwh {
     padding: 120px 0;
     background-color: #fff9f3;
+    position: relative;
 }
 
 .dandwh .wedding-date {
@@ -410,8 +427,14 @@ body {
     display: none;
 }
 
+.dandwh .second-location-2 {
+    display: none;
+}
+
+
 .dandwh .first-iframe {
     position: absolute;
+    display: none;
     top: 0;
     transform: translateX(-105%) translateY(-20%);
     padding: 20px;
@@ -423,8 +446,9 @@ body {
 
 .dandwh .second-iframe {
     position: absolute;
+    display: none;
     top: 0;
-    transform: translateX(-165%) translateY(-20%);
+    transform: translateX(-125%) translateY(-20%);
     padding: 20px;
     background-color: #FFF8F3;
     box-shadow: 0 5px 6px rgba(0,0,0, 0.3);
@@ -433,13 +457,13 @@ body {
 }
 
 .dandwh .hidden-div {
-    opacity: 0;
+    display: none;
     transition: 0.3s ease-in;
     transition-delay: 2s;
 }
 
-#first-iframe:hover > #second-iframe {
-    display: none;
+.dandwh .show-div {
+    display: block;
 }
 
 .dandwh .first-location .hover-div:hover, .dandwh .second-location .hover-div:hover {
@@ -536,6 +560,7 @@ body {
 .gift {
     padding: 140px 0;
     background-color: #fff9f3;
+    position: relative;
 }
 
 .container-gift-icon {
@@ -548,6 +573,8 @@ body {
     margin-right: auto;
     margin-bottom: 50px;
     box-shadow: 0 2px 6px rgba(0,0,0, 0.3);
+    position: relative;
+    z-index: 2;
 }
 
 .gift-icon {
@@ -555,7 +582,6 @@ body {
     font-size: 180px;
     text-align: center;
     color: #DB9E3C;
-    padding-top: 10px;
 }
 
 .gift .content-gift {
@@ -616,6 +642,7 @@ body {
 .rsvp {
     padding: 150px 0;
     background-color: #fff9f3;
+    position: relative;
 }
 
 .rsvp label {
@@ -626,6 +653,7 @@ body {
     padding: 30px 30px;
     background-color: #FFEADD;
     box-shadow: 0 5px 6px rgba(0,0,0, 0.3);
+    z-index: 1;
 }
 
 .rsvp .border001 {
@@ -712,7 +740,8 @@ body {
     margin-bottom: 0;
 }
 
-audio {
+.audio {
+    
 }
 
 /* Style for the media player */
@@ -743,6 +772,10 @@ audio {
     .lovestory .text02 {
         margin: 0 50px 0 0;
     }
+    
+    #countTimer {
+        padding: 0 250px;
+    }
 }
 
 
@@ -763,6 +796,10 @@ audio {
 
     .titleCounter {
         font-size: 15px;
+    }
+
+    #countTimer {
+        padding: 0 200px;
     }
 
     .titles {
@@ -802,10 +839,59 @@ audio {
         padding-right: 100px;
     }
 
+    .dandwh {
+        padding:80px 0;
+    }
+
     .dandwh .titles {
         font-size: 110px;
     }
-}
+
+    .dandwh .first-location-2 a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .dandwh .second-location-2 a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .dresscode .code-title {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    
+    .dresscode .code-title .phrase002 {
+        padding: 0;
+    }
+
+    .dresscode .code-title p {
+        font-size: 15px;
+    }
+
+    .gift, .instagram {
+        padding: 80px 0;
+    }
+
+    .gift .gift-icon {
+        font-size: 140px;
+        height: 100%;
+    }
+
+    .gift .container-gift-icon, .instagram .instagram-icon {
+        width: 250px;
+        height: 250px;
+    }
+
+    .gift .content-gift, .instagram .content-instagram {
+        font-size: 16px;
+        margin: 0 180px;
+    }
+
+    .instagram .instagram-icon svg {
+        width: 130px
+    }
 
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) { 
@@ -822,6 +908,10 @@ audio {
     .countdown {
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+
+    #countTimer {
+        padding: 0 100px;
     }
 
     .mainpicture .container {
@@ -873,6 +963,7 @@ audio {
     #ring-svg {
         width: 95px;
     }
+
     .dandwh {
         padding: 100px 0;
     }
@@ -897,6 +988,71 @@ audio {
         display: block;
     }
 
+    .dandwh .second-location {
+        display: none;
+    }
+
+    .dandwh .second-location-2 {
+        display: block;
+    }
+    
+    .dandwh .line {
+        display: none;
+    }
+    
+    .dandwh .line-horizontal {
+        display: block;
+        margin: 30px 0;
+        height: 1px;
+        background-color: #DB9E3C;
+        box-shadow: 0 2px 3px rgba(0,0,0, 0.3);
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .dresscode .code-title {
+        padding-bottom: 20px;
+    }
+
+    .dresscode .color-code {
+        padding-top: 0;
+    }
+    
+    .gift .content-gift, .instagram .content-instagram {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .rsvp {
+        padding: 80px;
+    }
+
+    .rsvp .titles {
+        font-size: 40px;
+    }
+
+    .rsvp .phrase001 {
+        font-size: 14px;
+    }
+
+    .rsvp .container-rsvp label{
+        font-size: 14px;
+    }
+
+    .rsvp input[type=text], .rsvp input[type=email] {
+        width: 400px;
+    }
+    
+    .rsvp textarea {
+        width: 400px;
+    }
+
+    .rsvp .reminder {
+        width: 380px;
+        font-size: 14px;
+    }
+
  }
 
 /* Medium devices (tablets, 768px and up) */
@@ -904,25 +1060,169 @@ audio {
     #mainTitle {
         font-size: 80px!important;
         line-height: 80px;
+        margin: 20px 0px;
     }
+
     #khlogo {
-        width: 30%;
+        width: 40%;
     }
+
     .description {
         font-size: 1rem;
     }
+
+    .main .text-end {
+        text-align: center!important;
+        font-size: 26px;
+    }
+
+    .main .description {
+        margin-top: 40px;
+        padding: 0 50px;
+    }
+
+    .main .btn {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 12px 35px 12px 35px;
+    }
+
+    #countTimer {
+        padding: 0 130px;
+    }
+
+    .container-mainpicture .mainpicture .container {
+        padding: 100px 100px
+    }
+
+    .dandwh .titles .row .col p {
+        font-size: 80px;
+    }
+    
+    .rsvp .container-rsvp .border002 {
+        padding: 50px;
+    }
+
+    .gift .content-gift, .instagram .content-instagram {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .rsvp {
+        padding: 40px 0;
+    }
+
+    .rsvp .container-rsvp {
+        padding: 0;
+        background-color: tr;
+    }
+
+    .rsvp input[type=text], .rsvp input[type=email] {
+        width: 300px;
+    }
+    
+    .rsvp textarea {
+        width: 300px;
+    }
+
+    .rsvp .rectBox {
+        width: 300px;
+    }
+
+    .rsvp .reminder {
+        width: 320px;
+        font-size: 14px;
+    }
+
  }
 
 /* Small devices (landscape phones, 576px and down) */
 @media (max-width: 576px) {
     #mainTitle {
-        font-size: 70px!important;
+        display: none;
     }
+
+    .main .sm-main-title {
+        font-family: 'Euphoria Script', cursive;
+        display: block;
+        font-size: 85px;
+        line-height: 85px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #DB9E3C;
+        text-shadow: 0 3px 6px rgba(0,0,0, 0.5);
+    }
+
+    .container-mainpicture .mainpicture .container {
+        padding: 100px 40px
+    }
+
+    #countTimer {
+        padding: 0 60px;
+    }
+
+    .lovestory .titles {
+        margin-bottom: 10px;
+    }
+
+    .lovestory .img-grp001 {
+        margin-bottom: 20px;
+    }
+
+    .lovestory .img-003 {
+        margin-bottom: 0;
+    }
+
+    .lovestory .img-003 .col {
+        margin-bottom: 15px;
+    }
+
+    .celebration .titles {
+        line-height: 60px;
+    }
+
+    .dandwh .titles {
+        line-height: 80px;
+    }
+
+    .dandwh .titles .row .col p {
+        font-size: 80px;
+    }
+
+    .dandwh .row .line {
+        display: none;
+    }
+
+    .dresscode .titles {
+        line-height: 60px;
+    }
+
+    .celebration .phrase002 {
+        padding: 0;
+    }
+
+    .celebration .phrase003 {
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .gift .titles {
+        line-height: 60px;
+    }
+
     #khlogo {
-        width: 140px;
+        width: 160px;
     }
     .image-middle01 img {
         width: 80%;
     }
-}
 
+    .instagram .titles {
+        font-size: 50px;
+    }
+
+    .rsvp .border002 {
+        padding: 10px!important;
+    }
+}

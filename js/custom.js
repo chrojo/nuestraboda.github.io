@@ -55,8 +55,55 @@ function changeBackgroundColorOnScroll() {
 // Add an event listener to the window's scroll event
 window.addEventListener('scroll', changeBackgroundColorOnScroll);
 
-// Get a reference to the audio element
-//const audio = document.getElementById('audio');
+// play audio
 
-// Play the audio automatically when the page is loaded
-//audio.play();
+setTimeout(function(){
+  document.getElementById("my_audio").play();
+}, 3000)
+
+
+// Get references to both div elements by their IDs
+const div1 = document.getElementById('first-location');
+const div2 = document.getElementById('second-location');
+const div3 = document.getElementById('first-iframe');
+const div4 = document.getElementById('second-iframe');
+let hoverTimeout;
+
+// Add an event listener for the "mouseover" event
+div1.addEventListener("mouseover", function() {
+  // Add the "hovered" class to the div when it's hovered
+  div3.classList.add("show-div");
+
+  // Clear the previous timeout (if any) to prevent removal while hovering
+  clearTimeout(hoverTimeout);
+});
+
+// Add an event listener for the "mouseout" event (optional - removes the class when the mouse leaves)
+div1.addEventListener("mouseout", function() {
+
+  // Remove the "hovered" class from the div after a delay of 3 seconds
+  hoverTimeout = setTimeout(function() {
+    div3.classList.remove("show-div");
+  }, 2000); // 3000 milliseconds = 3 seconds
+
+});
+
+
+// Add an event listener for the "mouseover" event
+div2.addEventListener("mouseover", function() {
+  // Add the "hovered" class to the div when it's hovered
+  div4.classList.add("show-div");
+
+  // Clear the previous timeout (if any) to prevent removal while hovering
+  clearTimeout(hoverTimeout);
+});
+
+// Add an event listener for the "mouseout" event (optional - removes the class when the mouse leaves)
+div2.addEventListener("mouseout", function() {
+
+  // Remove the "hovered" class from the div after a delay of 3 seconds
+  hoverTimeout = setTimeout(function() {
+    div4.classList.remove("show-div");
+  }, 2000); // 3000 milliseconds = 3 seconds
+  
+});
