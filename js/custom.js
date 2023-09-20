@@ -108,26 +108,39 @@ div2.addEventListener("mouseout", function() {
   
 });
 
-// Add Background to Button Toggle
 
-const content = document.getElementById("container-navbar");
-const toggleButton = document.getElementById("toggleButton");
+document.addEventListener("DOMContentLoaded", function () {
+  
+  const loader = document.getElementById('container-loader');
+  var bodyElement = document.body;
+  const navbar = document.getElementById("navcont");
 
-console.log(content);
-console.log(toggleButton);
+  
+  if (bodyElement) {
+    bodyElement.classList.add("overflow");
 
-toggleButton.addEventListener("click", function () {
-    const expanded = toggleButton.getAttribute("aria-expanded") === "true";
+    setTimeout(function () {
+      bodyElement.classList.remove("overflow");
+    }, 4000); // A
+  }
 
-    if (expanded) {
-        // When aria-expanded is true, change the background color
-        //content.style.backgroundColor = "#000"; // Change to your desired color
-        console.log(content);
-    } else {
-        // When aria-expanded is false, reset the background color
-        //content.style.backgroundColor = "transparent"; // Reset to the default color
-    }
 
-    // Toggle the aria-expanded attribute
-    toggleButton.setAttribute("aria-expanded", !expanded);
+
+  // Simulate a delay to show the loader for demonstration purposes
+  setTimeout(function () {
+    loader.classList.add("loaded");
+  }, 6000); // Adjust the delay as needed
+
+  setTimeout(function () {
+    loader.classList.add("fade-in");
+  }, 4000); // Adjust the delay as needed
+
+  if (navbar) {
+    // Show the navbar after a 5-second delay
+    setTimeout(function () {
+      navbar.classList.add("fade-in-out");
+    }, 4000); // 5000 milliseconds = 5 seconds
+  }
+  
 });
+

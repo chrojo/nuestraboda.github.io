@@ -10,7 +10,12 @@ body {
     font-weight: 300;
 }
 
+.overflow {
+    overflow: hidden;
+}
+
 .navbar  {
+    opacity: 0;
 }
 
 .navbar .container-fluid {
@@ -33,6 +38,10 @@ body {
 .color-change-div {
     background-color: transparent;    /* Initial background color */
     transition: background-color 0.5s ease; /* Smooth transition */
+}
+
+.main-container {
+    z-index: 1;
 }
 
 #mainTitle {
@@ -137,6 +146,8 @@ body {
     background-color: #FFEADD;
     padding-top: 150px;
     padding-bottom: 400px;
+    position: relative;
+    z-index: -1;
 }
 
 .dataCount {
@@ -224,7 +235,17 @@ body {
     background-image: url("https://chrojo.github.io/nuestraboda.github.io/images/GodHearts.png");
     width: 100%;
     height: 100%;
-    opacity: 8%;
+    opacity: 7%;
+}
+
+.background-pattern002 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("https://chrojo.github.io/nuestraboda.github.io/images/GodHearts_black.png");
+    width: 100%;
+    height: 100%;
+    opacity: 3%;
 }
 
 .lovestory {
@@ -769,8 +790,73 @@ body {
     margin-bottom: 0;
 }
 
-.audio {
-    
+#container-loader {
+    background-color: #EDD9BE;
+}
+
+/* Hide the loader when content is loaded */
+
+.loaded {
+    display: none;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.hidden {
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+.fade-in-out {
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+
+.hidden {
+    display: none!important;
+}
+
+#container-loader {
+    transition: opacity 2s easi-in;
+    overflow: hidden;
+}
+
+#container-loader .bg {
+    background: #fff9f3;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+}
+
+.loader-up {
+    font-size:200px;
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    Background: url("/images//wave-1.png");
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    -webkit-text-stroke-width:3px;
+    -webkit-text-stroke-color:#C53222;
+    background-size: cover;
+    background-position-x: 20%;
+    background-position-y:100%;
+    animation: mymove 10s infinite ;
+    -webkit-box-reflect: below -30px linear-gradient(transparent, rgba(0,0,0,0.4)) ;
+  }
+
+@keyframes mymove {
+    50% {
+        background-position-x:100%;
+    }
 }
 
 /* Style for the media player */
