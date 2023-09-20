@@ -55,13 +55,6 @@ function changeBackgroundColorOnScroll() {
 // Add an event listener to the window's scroll event
 window.addEventListener('scroll', changeBackgroundColorOnScroll);
 
-// play audio
-
-//setTimeout(function(){
-//  document.getElementById("my_audio").play();
-//}, 3000)
-
-
 // Get references to both div elements by their IDs
 const div1 = document.getElementById('first-location');
 const div2 = document.getElementById('second-location');
@@ -123,8 +116,6 @@ document.addEventListener("DOMContentLoaded", function () {
       bodyElement.classList.remove("overflow");
     }, 4000); // A
   }
-
-
 
   // Simulate a delay to show the loader for demonstration purposes
   setTimeout(function () {
