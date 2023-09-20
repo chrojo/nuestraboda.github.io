@@ -45,7 +45,7 @@ function changeBackgroundColorOnScroll() {
       });
     } else {
       changeBtn.style.display = 'none';
-      colorChangeDiv.style.backgroundColor = '#fff9f3'; // Reset to the initial color+
+      colorChangeDiv.style.backgroundColor = 'transparent'; // Reset to the initial color+
       colorTextChangeDiv.forEach(div => {
         div.style.color = '#DB9E3C'; // Reset to the initial color
       });
@@ -57,9 +57,9 @@ window.addEventListener('scroll', changeBackgroundColorOnScroll);
 
 // play audio
 
-setTimeout(function(){
-  document.getElementById("my_audio").play();
-}, 3000)
+//setTimeout(function(){
+//  document.getElementById("my_audio").play();
+//}, 3000)
 
 
 // Get references to both div elements by their IDs
@@ -106,4 +106,28 @@ div2.addEventListener("mouseout", function() {
     div4.classList.remove("show-div");
   }, 2000); // 3000 milliseconds = 3 seconds
   
+});
+
+// Add Background to Button Toggle
+
+const content = document.getElementById("container-navbar");
+const toggleButton = document.getElementById("toggleButton");
+
+console.log(content);
+console.log(toggleButton);
+
+toggleButton.addEventListener("click", function () {
+    const expanded = toggleButton.getAttribute("aria-expanded") === "true";
+
+    if (expanded) {
+        // When aria-expanded is true, change the background color
+        //content.style.backgroundColor = "#000"; // Change to your desired color
+        console.log(content);
+    } else {
+        // When aria-expanded is false, reset the background color
+        //content.style.backgroundColor = "transparent"; // Reset to the default color
+    }
+
+    // Toggle the aria-expanded attribute
+    toggleButton.setAttribute("aria-expanded", !expanded);
 });

@@ -9,8 +9,8 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg container-fluid fixed-top color-change-div">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+        <div id-="container-navbar" class="container-fluid">
+            <button id="toggleButton" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -369,16 +369,8 @@
                     <div class="border002">
                         <div class="titles">Confirma tu invitación</div>
                         <p class="phrase001">¡Esperamos que puedas asistir!</p><p class="phrase001">¡Se ruega puntualidad!</p>
-                        <form target="_blank" action="https://formsubmit.co/lvasquezvega@hotmail.com" method="POST">
-                            <label for="name">Nombre completo:</label>
-                            <input type="text" name="name" required><br><br>
-                            
-                            <label for="message">¿Quieres enviarnos un mensaje?</label>
-                            <textarea  placeholder="Envianos tus mejores deseos!" name="message" rows="4"></textarea><br><br>
-                            
-                            <button type="submit">Confirmar</button>
-                        </form>
-                        <div class="reminder">
+                        <div class="container" id="ff-compose"></div>
+                        <script async defer src="https://formfacade.com/include/116089124551470551247/form/1FAIpQLSfFjwuCJLX2KT1OdSi75oldyjuy-tv9ACxcScMBZe7Rt2fEJg/bootstrap.js?div=ff-compose"></script>                        <div class="reminder">
                             <p>Nos gustaría mucho contar con tu presencia en nuestro evento. Si no confirmas tu asistencia, entenderemos que lamentablemente no podrás unirte a nosotros.</p> 
                         </div>
                     </div>
