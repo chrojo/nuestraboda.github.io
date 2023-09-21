@@ -107,7 +107,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const loader = document.getElementById('container-loader');
   var bodyElement = document.body;
   const navbar = document.getElementById("navcont");
-
   
   if (bodyElement) {
     bodyElement.classList.add("overflow");
@@ -133,5 +132,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 4000); // 5000 milliseconds = 5 seconds
   }
   
+});
+
+// Toggle Button Change Background
+
+const toggleButton = document.getElementById('toggleButton');
+const targetDiv = document.getElementById("navcont");
+
+toggleButton.addEventListener('click', function() {
+  const ariaExpanded = toggleButton.getAttribute('aria-expanded') === 'true';
+
+
+  if (ariaExpanded) {
+    if (window.scrollY == 0) {
+      targetDiv.classList.add("color-change-navbar"); // Change to a different color
+    }
+  }
+
 });
 
